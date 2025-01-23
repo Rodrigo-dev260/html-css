@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgreen;
+}
+
+#principal {
+    color: rgba(225, 238, 232, 0.577);
+    background-color: darkgreen;
+    text-align: center;
+}
+
+.aprendendo {
+    color: rgb(96, 96, 174);
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: rgb(57, 165, 57);
+}
+
+.avancado {
+    color: rgb(82, 145, 82);
+}
+ 
