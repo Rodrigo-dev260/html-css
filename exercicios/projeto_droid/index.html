@@ -36,11 +36,28 @@
             text-align: center;
             color: white;
         }
+        
+        div#container {
+            position: relative;
+            background-color: black;
+            height: 315px;
+            
+        }
+        
+        #video {
+            position: absolute;
+            left: 50%;
+            top: 51%;
+
+            transform: translate(-50%, -50%);
+            
+            
+        }
 
         section {
             background-color: aliceblue;
             margin: auto;
-            width: 500px;
+            width: 600px;
         }
 
         h2, h3, h4 {
@@ -48,8 +65,51 @@
         }
 
         p {
+            text-align: justify;
+            padding: 100px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #lista {
+            background-color: aquamarine;
+            border-radius: 20px;
+        }
+
+        ul  {
+            list-style-position: inside;
+            margin: 0px 10px;
+            list-style-type: none;
+            columns: 2;
+            
+            
+        }
+
+        ul li::before {
+            content: '\2714';
+            margin-right: 8px;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        footer > p {
+            color: white;
             text-align: center;
-            marg
+        }
+
+        footer a {
+            text-decoration: none;
+            font-weight: normal;
+            font-style: italic;
+            color: rgba(66, 202, 66, 0.826);
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -81,39 +141,41 @@
             <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do Android.</p>
             <img src="imagens/bugdroid.png" alt="Bugdroid">
             <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Lhao-El3oFQ?si=-Gkac_tTMKtne0M6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="container">
+                <imgage id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/Lhao-El3oFQ?si=-Gkac_tTMKtne0M6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></imgage>
             </div>
             </div>
         </article>
     </section>
     <section>
-        <article>
-            <h4>Quer aprender mais? </h4>
-            <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
-            <ul>
-                <li>1.5 - Cupcake</li>
-                <li>1.6 - Donut</li>
-                <li>3.0 - Eclair</li>
-                <li>2.2 - Froyo</li>
-                <li>2.3 - Gingerbread</li>
-                <li>3.0 - Honeycomb</li>
-                <li>4.0 - Ice Cream Sandwich</li>
-                <li>4.1 - Jelly Bean</li>
-                <li>4.4 - KitKat</li>
-                <li>5.0 - Lolipop</li>
-                <li>6.0 - Marshmallow</li>
-                <li>7.0 - Nougat</li>
-                <li>8.0 - Oreo</li>
-                <li>9.0 - Pie</li>
-            </ul>
-            <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
-            <p>Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
-        </article>
+        <main>
+            <aside id="lista">
+                <h4>Quer aprender mais? </h4>
+                <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+                <ul>
+                    <li>1.5 - <abbr title="bolo de copo">Cupcake</abbr></li>
+                    <li>1.6 - <abbr title="Rosquinha">Donut</abbr></li>
+                    <li>3.0 - <abbr title="Bomba">Eclair</abbr></li>
+                    <li>2.2 - <abbr title="Iogurte congelado">Froyo</abbr></li>
+                    <li>2.3 - <abbr title="Pão de gengibre">Gingerbread</abbr></li>
+                    <li>3.0 - <abbr title="Favo de mel">Honeycomb</abbr></li>
+                    <li>4.0 - <abbr title="Sanduiche de sorvete">Ice Cream Sandwich</abbr></li>
+                    <li>4.1 - <abbr title="Jujuba">Jelly Bean</abbr></li>
+                    <li>4.4 - <abbr title="KitKat">KitKat</abbr></li>
+                    <li>5.0 - <abbr title="Pirulito">Lolipop</abbr></li>
+                    <li>6.0 - <abbr title="Marshmallow">Marshmallow</abbr></li>
+                    <li>7.0 - <abbr title="Torrone">Nougat</abbr></li>
+                    <li>8.0 - <abbr title="Oreo">Oreo</abbr></li>
+                    <li>9.0 - <abbr title="Torta">Pie</abbr></li>
+                </ul>
+                <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+                <p>Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+            </article>
+        </aside>
         <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
     </section>
     <footer>
-        <p>Site criado por Gustavo Guanabara para o CursoemVideo.</p>
+        <p>Site criado por <a href="https://gustavoguanabara.github.io/" target="_blank" rel="noopener">Gustavo Guanabara</a> para o CursoemVideo.</p>
     </footer>
 </body>
 </html>
